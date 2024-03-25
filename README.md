@@ -29,6 +29,7 @@ To trim audio using ffmpeg, use the following command:
 
 ```bash
 yt-dlp -f bestaudio "URL" -o audio.opus && ffmpeg -i audio.opus -ss <start-time> -to <end-time> -c:a libmp3lame -q:a 2 audio_trimmed.mp3
+```
 
 **Explanation:**
 
